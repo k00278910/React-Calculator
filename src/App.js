@@ -22,10 +22,12 @@ const createDigits =()=>{
       {/* add HTML markup for display*/}
       <div className="App">
         <div className="calculator">
-          <span>(0)</span>0
-        </div>
 
-        <div className="operators">
+          <div className="display">
+          <span>(0)</span>0
+          </div>
+          
+          <div className="operators">
           <button>/</button>
           <button>*</button>
           <button>+</button>
@@ -35,12 +37,14 @@ const createDigits =()=>{
         </div>
 
         <div className="digits">
-          {/* create buttons 1-9 using a function */}
-          {createDigits()}
+          
+          { createDigits() }
+          <button>0</button>
           <button>.</button>
           <button>=</button>
         </div>
 
+        </div>
       </div>
     </div>
   );
